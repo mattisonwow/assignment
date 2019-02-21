@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3画太极图</title>
+    <style rel="stylesheet" type="text/css">
+        body {
+            background: gray;
+            margin: 0;
+            padding: 0;
+        }
+        .taiji {
+            margin: 100px auto;  /*主要是想要效果图居中，没有也可以*/
+            width: 0;
+            height: 600px;   /*画一条高为600像素的线*/
+            border-left: 300px solid white; /*线的左边为一个宽为300像素的白色矩形*/
+            border-right: 300px solid black;/*线的右边为一个宽为300像素的黑色矩形，黑白整体为一个宽为600像素的正方形*/
+            border-radius: 300px;  /*画一个半径为300像素，左白右黑的圆*/
+        }
+        .taiji::before {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: black;  /*画一个宽为100像素，黑色背景的正方形*/
+            border: 100px solid white; /*画一个内黑外白的同心正方形*/
+            border-radius: 100%; /*画一个内黑外白的同心圆*/
+            margin-left: -150px; /*将同心圆的圆心移到大圆直径上*/
+        }
+        .taiji::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: white;
+            border: 100px solid black;
+            border-radius: 100%;
+            margin-left: -150px;
+        }
+    </style>
+</head>
+<body>
+<div class="taiji">
+</div>
+</body>
+</html>
