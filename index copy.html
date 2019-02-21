@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="./css/indexcss.css">
+</head>
+<body>
+    <nav class="clearfix topNavBar">
+        <ul class="clearfix">
+            <li><a href="">HOME</a></li>
+            <li><a href="#personIntroduction_a">ABOUT</a></li>
+            <li><a href="#skills_a">SKILLS</a></li>
+            <li><a href="#portfolio_a">PORTFOLIO</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="#contact_a">CONTACT</a></li>
+        </ul> 
+    </nav>
+    <section class="banner">
+        <div class="mask"></div>
+        <main class="textCenter">
+            <h1>
+                Howdy, I'm 
+                <strong>Mattison</strong></h1>
+            <p class="content"> A Web front-end development engineer</p>
+           <p class="button"><a href="#personIntroduction_a"">MORE ON ME</a></p>
+        </main>
+    </section>
+    <section id="personIntroduction_a" class=" clearfix personIntroduction">
+        <div class="clearfix borderCenter">
+            <div class="profile">
+                <img src="./photo/profile.jpg" alt="profile">
+            </div>
+            <div class="introduction">
+                <span class="wellcome">Holle
+                    <p class="triangle"></p>
+                </span>
+                <h2>
+                    About 
+                    <strong>Me</strong>
+                </h2>
+                <p> A Web front-end development engineer</p>
+                <p>
+                    <a class="button bt1" href="#contact_a">Hire Me</a>
+                    <a class="button bt2" href="">Download CV</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="skills_a"  class="skills">
+        <div class="line"></div>
+        <h2>My <strong>Skills</strong>
+        </h2>
+        <ol class="clearfix">
+            <li><h3>HTML 5 &amp; CSS 3</h3>
+                <div class="progressBar">
+                    <div class="progress"style="width:50%"></div>
+                </div>
+            </li>
+            <li><h3>JavaScript</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>jQuery</h3>
+                <div class="progressBar">
+                    <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>Vue</h3>
+                <div class="progressBar">
+                        <div class="progress"></div>
+                </div>
+            </li>
+            </li>
+            <li><h3>React</h3>
+                <div class="progressBar">
+                        <div class="progress"></div>
+                </div>
+            </li>
+            <li><h3>HTTP</h3>
+                <div class="progressBar">
+                        <div class="progress"></div>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <section id="portfolio_a" class="portfolio">
+        <div class="line"></div>
+        <h2>My <strong>PORTFOLIO</strong></h2>
+        <nav class="navBar">
+        <ul class="clearfix">
+            <li id="portfolioAll">All</li>
+            <li id="portfolioFrame">Frame</li>
+            <li id="portfolioOther">Native JS&amp;CSS</li>
+        </ul>
+        <div id="portfolioBar"class="bar state-1">
+            <div class="barInner"></div>
+        </div>
+        </nav>
+        <script>
+            portfolioAll.onclick=function(){
+                portfolioBar.className = 'bar state-1'
+            }
+            portfolioFrame.onclick=function(){
+                portfolioBar.className = 'bar state-2'
+            }
+            portfolioOther.onclick=function(){
+                portfolioBar.className = 'bar state-3'
+            }
+        </script>
+            <div class="assignment">
+               <div class="clearfix div">
+                   <div class="big">
+                        <a><img src="./photo/p1.jpg" alt="">
+                        <h3></h3>
+                        <p></p>
+                        </a>
+                    </div>
+                    <div class="clearfix small">
+                    <a ><img src="./photo/p2.jpg" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </a>
+                    <a><img src="./photo/p3.jpg" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </a>
+                    <a><img src="./photo/p4.jpg" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </a>
+                    <a><img src="./photo/p5.jpg" alt="">
+                        <h3></h3>
+                        <p></p>
+                    </a>
+               </div>
+            </div>
+    </section>
+    <section id="contact_a" class="clearfix contact">
+        <div class="line"></div>
+        <h2>Wanna <strong>Start Work</strong> With Me?</h2>
+        <form action="" class="resume_form">
+            <h3>Get In Touch</h3>
+            <input class="text"type="text" name="Name" placeholder="Your Name">
+            <input class="text"type="text" name="Email" placeholder="Your Email">
+            <input class="text"type="text" name="Phone" placeholder="Your Phone">
+            <textarea class="textarea" name="Message"></textarea>
+            <input type="submit" class="submit" value="Send Message">
+        </form>
+        <div class="contact_text">
+            <h3>My Contact Details</h3>
+            <ul>
+                <li><span>EMAIL</span>
+                zgsdzhaoqiang@163.com
+                </li>
+                <li><span>PHONE</span>
+                +86 17689929850
+                </li>
+                <li><span>FAX</span>
+                none
+                </li>
+                <li><span>ADDRESS</span>
+                    Jiangsu Wuxi, China
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <h5>Thanks you !</h5>
+    </footer>
+</body>
+</html>
